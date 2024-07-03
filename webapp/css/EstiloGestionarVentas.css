@@ -1,0 +1,211 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2E5D5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*HEADER*/
+/*HEADER DONDE ESTA EL LOGO Y LAS REDES*/
+.logo img {
+    height: 85px;
+    margin-left: 35px;
+}
+
+.LogoRedes {
+    margin-bottom: 0%;
+    background-color: white;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.LogoRedes a {
+    text-decoration: none;
+    color: black;
+}
+
+.Redes img {
+    height: 35px;
+    margin-right: 5px;
+}
+
+/*HEADER DONDE ESTA EL MENU NAVEGACION*/
+.Menu {
+    margin-top: 0%;
+    background-color: #1B3F48;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.Menu ul, .Redes ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.Menu ul {
+    margin-left: auto;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    position: relative;
+}
+
+.Usuario img {
+    height: 30px;
+}
+
+.Usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*ESTILO PSEUDO-ELEMENTO ::AFTER EN LA LISTA*/
+.Menu ul li a::after, .Usuario a::after {
+    content: ''; /*sin mostrar contenido pero crea la linea de decoracion*/
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -5px; /*para colocar la linea debajo del texto*/
+    left: 0;
+    transform: scaleX(0); /*reducir la escala*/
+    transform-origin: bottom right; /*el origen de la transformacion*/
+    transition: transform 0.25s ease-out; /*una transicion suave*/
+}
+
+/*HOVER EN LA LISTA DEL HEADER*/
+.Menu ul li a:hover::after, .Usuario a:hover::after {
+    transform: scaleX(1); /*expansion de la linea a tamaño completo*/
+    transform-origin: bottom left; /*cambiar el origen de la transformacion*/
+}
+
+/*FOOTER DONDE ESTA EL MENU NAVEGACION*/
+.Menu-footer {
+    background-color: #1B3F48;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 90px; /*cambio para que se centre el nav abajo*/
+    justify-content: center;
+}
+
+.Menu-footer ul {
+    list-style: none;
+    display: flex;
+    gap: 90px; /*cambio para que se centre el nav abajo*/
+    padding: 0px; /*cambio para que se centre el nav abajo*/
+}
+
+.Menu-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.Menu-footer a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.Usuario-footer img {
+    height: 30px;
+}
+
+.Usuario-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*FOOTER COPYRIGHT*/
+.Copyright {
+    background-color: #284F58;
+    height: 30px;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+/*Estilo General del cuerpo*/
+main {
+    background-color: #F2E5D5;
+    padding: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    text-align: left;
+    color: #1B3F48;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 27px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si hay altura definida */
+}
+/*Estilo de la página de gestionar ventas*/
+.cajasOpciones{
+    color: #1B3F48;
+    display: inline-block;
+    width: 44%;
+    height: 170px;
+    margin: 20px;
+    background-color: #9dbbc2;
+    border-radius: 20px;
+    /*border: 1px solid #1B3F48;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Añade una transición suave */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.cajasOpciones:hover {
+    transform: scale(1.04); /* Agranda el contenedor */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    background-color: #a1c3ca;
+}
+
+.Opciones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si hay altura definida */
+}
+
+.cajasOpciones a{
+    text-decoration: none; 
+    color: #1B3F48;
+    height: 100%; /*Para que enlace ocupe todo el div*/
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Organiza los hijos verticalmente */
+}
+
+.cajasOpciones img{
+    width: 30px; 
+    height: 30px; 
+    margin-right: 20px;
+}
+
+
+
+

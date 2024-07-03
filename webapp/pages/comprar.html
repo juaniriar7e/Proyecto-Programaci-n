@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería ¡Donde Paco!</title>
+    <link rel="shortcut icon" href="../images/LOGO.PNG" alt="logo">
+    <!--Documentos CSS utilizados-->
+    <link rel="stylesheet" href="../css/comprar.css">
+    <!---Fuente Nunito de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <!--LOGO Y REDES-->
+        <div class="LogoRedes">
+            <div class="logo">
+                <img src="../images/LOGO.png" alt="Librería ¡Donde Paco!">
+            </div>
+            <div class="Redes">
+                <ul>
+                    <li><a href="https://www.instagram.com"><img src="../images/Instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com"><img src="../images/Facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjdofSloIGHAxVQmYQIHetICooQPAgI"><img
+                                src="../images/Buscar.png" alt="Buscar"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--MENU-->
+        <div class="Menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="catalogo.html">Cátalogo</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="sucursal.html">Contacto</a></li>
+            </ul>  
+            <div class="Usuario">
+                <a href="perfiles.html"><img src="../images/Usuario.png" alt="Usuario"></a>
+                <a href="perfiles.html">Mi cuenta</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="header-volver">
+            <a href="../pages/catalogo.html" class="volver">Volver</a>
+        </div>
+
+        <div class="producto-detalle">
+            <div class="imagen">
+                <img src="#" alt="Imagen del producto">
+            </div>
+            <div class="informacion">
+                <h1>Cien años de soledad</h1> <!--NOMBRE DEL LIBRO EN INVENTARIO-->
+                <form>
+                    <div class="input-group">
+                        <label for="metodo-pago">Método de pago</label>
+                        <select id="metodo-pago" name="metodo-pago">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="efectivo">Efectivo</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="sucursal">Sucursal donde retira</label>
+                        <select id="sucursal" name="sucursal">
+                            <option value="sucursal1">Panamá</option>
+                            <option value="sucursal2">Arraiján</option>
+                            <option value="sucursal2">Chiriquí</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" value="0">
+                    </div>
+                    <button type="submit">Pedir</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!--MENU-->
+        <div class="Menu-footer">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="catalogo.html">Cátalogo</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="sucursal.html">Contacto</a></li>
+            </ul>  
+            <div class="Usuario-footer">
+                <a href="perfiles.html"><img src="../images/Usuario.png" alt="Usuario"></a>
+                <a href="perfiles.html">Mi cuenta</a>
+            </div>
+            <ul>
+                <li><a href="home.html">Cerrar Sesión</a></li>
+            </ul>
+        </div> 
+        <!--COPYRIGHT-->
+        <div class="Copyright">
+            <p>© 2024, Libreria ¡Donde Paco!</p>
+        </div>
+    </footer>
+</body>
+</html>
